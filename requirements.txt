@@ -1,2 +1,5 @@
 # Core dependencies
 typing-extensions>=4.0.0
+
+# File renamer dependency (from GitHub tag v1.0.3)
+renamer @ git+https://github.com/AlexGiov/file-renamer.git@v1.0.3
