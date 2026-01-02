@@ -43,7 +43,7 @@ from web_archiver.core import (
 )
 
 # Configure logging - both console and file
-log_dir = Path(__file__).parent.parent / 'logs'
+log_dir = Path(__file__).parent / 'logs'
 log_dir.mkdir(exist_ok=True)
 
 log_filename = f"web_archiver_{datetime.now().strftime('%Y%m%d_%H%M%S')}.log"
@@ -123,9 +123,9 @@ def main() -> int:
     parser.add_argument(
         '--7z-path',
         type=str,
-        default='7z',
+        default='C:\\Program Files\\7-Zip\\7z.exe',
         dest='seven_zip_path',
-        help='Path to 7z executable (default: "7z" from PATH)',
+        help='Path to 7z executable (default: "C:\\Program Files\\7-Zip\\7z.exe")',
     )
     
     parser.add_argument(
